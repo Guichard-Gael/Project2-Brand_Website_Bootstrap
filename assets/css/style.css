@@ -1,0 +1,131 @@
+/*===================
+       General
+===================*/
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 960px;
+}
+
+/*===================
+       Header
+===================*/
+header img {
+    width: 150px;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #FFC107;
+}
+
+
+/*===================
+        Home
+===================*/
+.home h1 {
+    font-size: 1rem;
+}
+
+.home img {
+    filter: grayscale(90%);
+}
+
+/*===================
+ Legal informations
+===================*/
+.legal-informations {
+    text-align: justify;
+}
+
+/*===================
+      About us
+===================*/
+figure img {
+    min-width: 270px;
+    max-width: 465px;
+}
+
+/*===================
+      Figurine
+===================*/
+.portrait-orientation {
+    max-width: 500px;
+    padding: 2px; 
+}
+
+.landscape-orientation {
+    max-width: 712px;
+    padding-top: 2px; 
+}
+
+/*===================
+        Mangas
+===================*/
+.shelves-mangas-img {
+    min-width: 300px;
+}
+
+/*===================
+    Gallery photo
+===================*/
+.photo-gallery img {
+    width: 95%;
+}
+
+/*===================
+      Contact
+===================*/
+form div *:focus {
+    border: 2px solid #FFC107!important;
+    box-shadow: none!important;
+}
+
+form select {
+    cursor: pointer;
+}
+
+form button {
+    transition: all 0.4s;
+}
+
+form button:hover {
+    background-color: #FFC107!important;
+    color: #FFF!important;
+    transition: all 0.4s;
+}
+
+/*===================
+      Responsive
+===================*/
+@media screen and (min-width: 400px) {
+    /** Home **/
+    .home h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    /** Home **/
+    .home h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /** General **/
+    main {
+        margin: 6rem 0 2rem 0;
+    }
+
+    /** Header **/
+    header img {
+        width: 100px;
+    }
+
+    /** Photo gallery **/
+    .photo-gallery img {
+        width: 45%;
+    }
+}
